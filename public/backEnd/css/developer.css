@@ -1,0 +1,198 @@
+.light-logo.header_img {
+    height: 45px;
+}
+
+.add_btn {
+    text-align: right;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+label.error{
+	color:#ca5e58;
+}
+
+
+
+.write_review_modal_list {
+  list-style: none;
+  margin: 0;
+  padding: 10px 30px;
+}
+.write_review_modal_list_item {
+  padding: 10px 0;
+}
+.write_review_modal_image_container {
+  display: block;
+  float: left;
+  width: 100%;
+  padding: 12px 0;
+}
+.photo-container {
+  width: 100%;
+  padding: 0 10px;
+  display: inline-block;
+}
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+}
+.flex-item {
+ /* width: 120px;
+  height: 120px;*/
+  float: left;
+  background-color: #ccc;
+  border: 1px solid #fff;
+  margin-right:5px;
+}
+.add-phots {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.btn-up-phots {
+  width: 46%;
+  border: 1px solid #ccc;
+  border-radius: 30px;
+  padding: 10px 35px;
+  text-align: center;
+  background-color: #eee;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 10px auto 0;
+  cursor: pointer;
+}
+.review_modal_image {
+ width: 47%;
+height: 50px;
+opacity: 0;
+position: absolute;
+left: 27%;
+top: -4%;
+cursor: pointer;
+}
+.options.list {
+  list-style: none;
+}
+.options.list-item {
+  float: left;
+  padding: 5px;
+}
+.selected-btn-color{
+  background-color: #5cb85c;
+}
+.phot-upld {
+  position: relative;
+}
+.modal-upload-image-preview {
+  width: 120px;
+  float: left;
+  height: 120px;                   /*03_dec abhi*/
+  object-fit:cover;
+  border: 1px solid transparent;
+}
+.btn.btn-remov {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+}
+.label.label-default.cstm-label {
+  font-size: 12px;
+}
+
+
+
+.col-md-4.uploaded-section {
+  padding: 0 !important;
+  margin: 0 !important;
+  width: 105px;
+}
+.write_review_upload_img p {
+  position: absolute;
+  top: 45px;
+  left: 10px;
+  color: #999;
+}
+.write_review_upload_img .fa.fa-times {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: #999;
+  cursor: pointer;
+}
+.star-review-table {
+  width: 52%;
+  text-align: left;
+}
+.star-raty > i {
+  color: #F3AF4B;
+}
+.review-modal-btn-container {
+  display: block;
+  width: 100%;
+  padding: 25px 0 0;
+  text-align: center;
+}
+.review-modal-submit-btn {
+  display: block;
+  width: 35%;
+  border: 1px solid #ccc;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px;
+  font-weight: 900;
+  margin: 0 auto;
+  color: #23527c;
+}
+.add-phots label.error{
+    display: none!important;
+}
+.mydatepicker.error{
+    width: 90% !important;
+    float: left !important;
+}
+.error1{
+  color:red;
+}
+#img_upload.error{
+    width: 90% !important;
+    float: left !important;
+}
+/*export button*/
+.add_btn ul.export-import.show{
+    box-shadow: 0px 0px 4px #b4b4b4;
+}
+.add_btn ul.export-import.show li a{
+    color: #565656;
+}
+.add_btn ul.export-import.show li{
+    padding: 3px 9px;
+}
+.add_btn ul.export-import.show li:hover{
+    background-color: #ddd;
+}
+.review_modal_video_css {
+    width: 47%;
+    height: 50px;
+    opacity: 0;
+    position: absolute;
+    left: 27%;
+    top: -4%;
+    cursor: pointer;
+}
+
+
+
+
+/***********************  Add here start by bucket list  ********/
+.activeclass{color:green;font-weight: bold;}
+.inactiveclass{color: red;font-weight: bold;}
+.user_profile_image{width:70px;height:70px;}
+#my_profile_image_id{width:400px;height:400px;}
+.user_view_profile_image{width:300px;height:300px;}
+@media only screen and (max-width: 767.98px) {
+    #my_profile_image_id{width:200px;height:200px;}
+    .user_view_profile_image{width:150px;height:150px;}
+}
