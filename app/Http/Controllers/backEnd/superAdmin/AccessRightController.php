@@ -4,7 +4,7 @@ use App\Http\Requests;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Session;
-use App\ManagementSection, App\Admin, App\AccessRight;  
+use App\Models\ManagementSection, App\Models\Admin, App\Models\AccessRight;  
 use DB; 
 
 class AccessRightController extends Controller

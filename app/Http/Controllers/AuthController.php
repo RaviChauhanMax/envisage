@@ -5,7 +5,7 @@ namespace App\Http\Controllers\backEnd;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Auth, Hash, Session, Mail;
-use App\Admin;
+use App\Models\Admin;
 class AuthController extends Controller
 {
     public function login(Request $request){

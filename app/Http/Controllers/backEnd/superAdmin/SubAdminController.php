@@ -5,7 +5,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Session; 
 use DB, Auth, Hash; 
-use App\Admin;
+use App\Models\Admin;
 use Carbon\Carbon;
 use TCPDF;
 use Excel;
