@@ -88,7 +88,7 @@
 									</div>
 									<?php
 										$admin_id = (isset($sub_admin->id)) ? $sub_admin->id : '';
-										$image    = App\Admin::getUserImg($admin_id);
+										$image    = App\Models\Admin::getUserImg($admin_id);
 								    ?>
 									<!-- <div class="form-group">
 										<label class="col-md-3 control-label">Image:</label>

@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::namespace('frontEnd')->group(function () {
     Route::get('/', 'Controller@index');
+    Route::post('/query','Controller@query');
 });
 
 
@@ -47,6 +48,13 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdminAuth'], function (
     //access rights
     Route::get('access-rights/{sub_admin_id}', 'backEnd\superAdmin\AccessRightController@index');
     Route::match(['get', 'post'], 'access-right/update', 'backEnd\superAdmin\AccessRightController@update');
+
+    //services
+    Route::get('services','backEnd\ServicesController@index');
+    Route::match(['get','post'],'services/add','backEnd\ServicesController@addServices');
+
+    //abouts
+    Route::get('abouts','backEnd\AboutsController@index');
 });
 
 
@@ -55,7 +63,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdminAuth'], function (
 
 define('projectLink', 'http://localhost:8000/');
 define('ADMINLINK', 'http://localhost:8000/admin');
-define('PROJECT_NAME', 'ENVISAGE');
+define('PROJECT_NAME', 'Ennvisage');
 define('systemImgPath', 'images/system');
 define('backEndCssPath', 'backEnd/css');
 define('backEndJsPath', 'backEnd/js');

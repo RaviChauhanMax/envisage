@@ -67,6 +67,7 @@
     <script src="{{ url( backEndJsPath.'/datatables.min.js') }}"></script>
     <script src="{{ url( backEndJsPath.'/bootstrap-datepicker.js') }}"></script>
     <script src="{{ url( backEndJsPath.'/toastr.min.js') }}"></script>
+    <script src="{{ url( backEndJsPath.'/myscript.js' ) }}"></script>
 
 
     

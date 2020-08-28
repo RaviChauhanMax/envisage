@@ -35,6 +35,41 @@
                         <span class="hide-menu">Sub Admin Management</span>
                     </a>
                 </li>
+                <?php
+
+                    $active   = '';
+                    $selected = '';
+                    $in = '';
+                    if(($page == 'services')){
+                        $active   = 'active';
+                        $selected = 'selected';
+                        $in ='in';
+                    }
+                ?>
+                <li class="sidebar-item {{ $selected }}"> 
+                    <a class="sidebar-link waves-effect waves-dark {{$active}}" href="{{url('/admin/services')}}" aria-expanded="false">
+                        <i class="mdi mdi-star-half"></i>
+                        <span class="hide-menu">Services</span>
+                    </a>
+                </li>
+
+                <?php
+
+                    $active   = '';
+                    $selected = '';
+                    $in = '';
+                    if(($page == 'abouts')){
+                        $active   = 'active';
+                        $selected = 'selected';
+                        $in ='in';
+                    }
+                ?>
+                <li class="sidebar-item {{ $selected }}"> 
+                    <a class="sidebar-link waves-effect waves-dark {{$active}}" href="{{url('/admin/abouts')}}" aria-expanded="false">
+                        <i class="mdi mdi-information"></i>
+                        <span class="hide-menu">Abouts</span>
+                    </a>
+                </li>
             </ul>
         </nav>
     </div>

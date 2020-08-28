@@ -3,7 +3,7 @@
 namespace App\Models;
 use DB;
 use Illuminate\Database\Eloquent\Model;
-use App\AccessRight;
+use App\Models\AccessRight;
 
 class ManagementSection extends Model
 {

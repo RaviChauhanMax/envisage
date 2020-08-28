@@ -15,6 +15,7 @@
     <link href="{{asset('frontEnd/vendor/venobox/venobox.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/style.css')}}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{asset('frontEnd/css/jquery.datetimepicker.css')}}">
 
 </head>
 
@@ -38,5 +39,9 @@
 <script src="{{asset('frontEnd/vendor/counterup/counterup.min.js')}}"></script>
 <script src="{{asset('frontEnd/vendor/aos/aos.js')}}"></script>
 <script src="{{asset('frontEnd/js/main.js')}}"></script>
+<script src="{{asset('frontEnd/js/jquery.datetimepicker.full.min.js')}}"></script>
+<script type="text/javascript">
+    jQuery('#datetimepicker').datetimepicker();
+</script>
 
 </html>
