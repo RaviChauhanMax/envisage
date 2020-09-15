@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers\frontEnd;
 
-use App\Repositories\ServiceRepositories,QueriesRepositories;
+use App\Repositories\ServiceRepositories;
+use App\Repositories\QueriesRepositories;
+
 class Controller
 {
 	protected $serviceRespositories, $queriesRepositories;
@@ -28,5 +30,10 @@ class Controller
     		return redirect('/')->with('success','Inserted successfully!');
     	else
     		return redirect('/')->with('error','Something went wrong, try again later!');
-    }
+	}
+	
+	public function contactUs()
+	{
+		return view('frontEnd.contact');
+	}
 }

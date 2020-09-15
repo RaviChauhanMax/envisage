@@ -118,6 +118,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background-color: #151515;
 }
 
 #header.header-scrolled, #header.header-inner-pages {
@@ -1140,17 +1141,17 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
+  /* background: #fff; */
 }
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
-  color: #151515;
-  float: left;
+  /* background: #ffc451; */
+  color: white;
+  /* float: left; */
   width: 44px;
   height: 44px;
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   border-radius: 4px;
@@ -1169,7 +1170,7 @@ section {
   padding: 0 0 0 60px;
   margin-bottom: 0;
   font-size: 14px;
-  color: #484848;
+  color: #fff;
 }
 
 .contact .info .email, .contact .info .phone {
@@ -1568,4 +1569,197 @@ section {
   text-align: center;
   font-size: 13px;
   color: #fff;
+}
+
+
+
+.contact-wrapper .title {
+    width: 100%;
+    padding: 4% 0;
+    text-align: center;
+    background: #263b68;
+    background: -moz-linear-gradient(left, #263b68 0%, #086bd4 65%, #086bd4 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, #263b68), color-stop(65%, #086bd4), color-stop(100%, #086bd4));
+    background: -webkit-linear-gradient(left, #263b68 0%, #086bd4 65%, #086bd4 100%);
+    background: -o-linear-gradient(left, #263b68 0%, #086bd4 65%, #086bd4 100%);
+    background: -ms-linear-gradient(left, #263b68 0%, #086bd4 65%, #086bd4 100%);
+    background: linear-gradient(to right, #263b68 0%, #086bd4 65%, #086bd4 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#263b68', endColorstr='#086bd4', GradientType=1)
+}
+
+.contact-wrapper .title h1 {
+    color: #fff;
+    font-size: 50px
+}
+
+.contact-wrapper .contact .wrap {
+    width: 100%;
+    display: inline-block;
+    background-color: #f3f6ff;
+    border: 1px solid #d1d8eb
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap {
+    width: 50%;
+    float: left;
+    height: 479px;
+    color: #fff;
+    padding-top: 3%;
+    text-align: center;
+    background-size: cover;
+    background-color: #fff;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url("../img/about/about3.jpg")
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .contact-detail-title {
+    margin-bottom: 5%
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .contact-detail-title h3 {
+    color: #fff;
+    font-size: 31px;
+    font-weight: 600;
+    margin-bottom: 5%;
+    text-align: center;
+    padding: 0 8%
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .contact-detail-title p {
+    padding: 0 7%;
+    font-size: 17px;
+    color: #dadada;
+    line-height: 30px;
+    text-align: center;
+    font-style: italic
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .info-wrap {
+    /* margin-bottom: 3%; */
+    display: flex;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    justify-content: flex-start;
+    -ms-flex-pack: start;
+    -webkit-justify-content: flex-start;
+    align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    -webkit-align-content: stretch;
+    align-items: flex-start;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .info-wrap .info {
+    order: 1;
+    -webkit-order: 1;
+    -ms-flex-order: 1;
+    flex: 1 0 85%;
+    -webkit-flex: 1 0 85%;
+    -ms-flex: 1 0 85%;
+    align-self: auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .info-wrap .info p {
+    font-size: 16px;
+    margin-top: 4px
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .info-wrap .info p a {
+    color: #fff
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .social-list {
+    margin: 2% 0;
+    display: inline-block
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .social-list li {
+    width: 40px;
+    text-align: center;
+    display: inline-block
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .social-list li a {
+    color: #fff;
+    font-size: 23px
+}
+
+.contact-wrapper .contact .wrap .contact-detail-wrap .social-list li a:hover {
+    color: #086ad7
+}
+
+.contact-wrapper .contact .wrap .form-wrap {
+    width: 50%;
+    float: left;
+    padding: 3%
+}
+
+.contact-wrapper .contact .wrap .form-wrap .title-wrap {
+    margin-bottom: 3%
+}
+
+.contact-wrapper .contact .wrap .form-wrap .title-wrap h3 {
+    font-size: 25px;
+    font-weight: 400;
+    color: #627488;
+    margin-bottom: 5%;
+    text-align: center
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .form-group label {
+    font-size: 15px;
+    color: #627488
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .form-group .form-control {
+    height: 52px;
+    font-size: 15px;
+    color: #637287;
+    border-radius: 5px
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .form-group .form-control::placeholder {
+    color: #bdbdbd
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .button {
+    margin: 8px 0 0;
+    text-align: center
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .button button {
+    font-weight: 500;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    padding: 12px 28px;
+    border-radius: 30px;
+    letter-spacing: 1.2px;
+    display: inline-block;
+    border: 1px solid #086ad7;
+    background-color: #086ad7;
+    text-transform: uppercase
+}
+
+.contact-wrapper .contact .wrap .form-wrap form .button button:hover {
+    color: #086ad7;
+    background-color: #fff;
+    border: 1px solid #086ad7;
+    transition: all 0.5s ease 0s;
+    -moz-transition: all 0.5s ease 0s;
+    -webkit-transition: all 0.5s ease 0s
 }

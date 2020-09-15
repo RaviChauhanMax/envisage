@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('frontEnd')->group(function () {
     Route::get('/', 'Controller@index');
     Route::post('/query','Controller@query');
+    Route::get('contact-us','Controller@contactUs');
 });
 
 
@@ -55,6 +56,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdminAuth'], function (
 
     //abouts
     Route::get('abouts','backEnd\AboutsController@index');
+    
 });
 
 
