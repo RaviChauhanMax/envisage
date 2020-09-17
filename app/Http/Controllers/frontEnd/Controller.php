@@ -1,9 +1,10 @@
 <?php
 
 namespace App\Http\Controllers\frontEnd;
-
+use Illuminate\Http\Request;
 use App\Repositories\ServiceRepositories;
 use App\Repositories\QueriesRepositories;
+use App\Libraries\Ennvisage;
 
 class Controller
 {
@@ -24,16 +25,14 @@ class Controller
     }
 
     public function query(Request $request)
-    {	
+    {
+        if(!Ennvisage::recaptchaChecking()){
+            return redirect('/')->with('error','ReCaptcha Error!');
+        }
     	$check = $this->queriesRepositories->insert($request);
     	if($check)
-    		return redirect('/')->with('success','Inserted successfully!');
+    		return redirect('/')->with('success','Your query sent successfully!');
     	else
     		return redirect('/')->with('error','Something went wrong, try again later!');
-	}
-	
-	public function contactUs()
-	{
-		return view('frontEnd.contact');
-	}
+    }
 }

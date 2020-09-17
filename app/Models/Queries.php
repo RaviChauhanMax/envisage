@@ -9,7 +9,7 @@ class Queries extends Model
     protected $table = 'queries';
 
     protected $fillable = [ 
-    	'name', 'mobile_no','scheduled_at','query','created_at','updated_at' 
+    	'name', 'mobile_no','scheduled_at','subject_id','query','created_at','updated_at' 
     ];
 
 

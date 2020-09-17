@@ -16,7 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::namespace('frontEnd')->group(function () {
     Route::get('/', 'Controller@index');
     Route::post('/query','Controller@query');
-    Route::get('contact-us','Controller@contactUs');
 });
 
 
@@ -56,7 +55,6 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdminAuth'], function (
 
     //abouts
     Route::get('abouts','backEnd\AboutsController@index');
-    
 });
 
 
@@ -65,7 +63,7 @@ Route::group(['prefix' => 'admin', 'middleware' => 'CheckAdminAuth'], function (
 
 define('projectLink', 'http://localhost:8000/');
 define('ADMINLINK', 'http://localhost:8000/admin');
-define('PROJECT_NAME', 'Ennvisage');
+define('PROJECT_NAME', 'Syncboat');
 define('systemImgPath', 'images/system');
 define('backEndCssPath', 'backEnd/css');
 define('backEndJsPath', 'backEnd/js');

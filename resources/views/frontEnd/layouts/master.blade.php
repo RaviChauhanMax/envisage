@@ -16,33 +16,44 @@
     <link href="{{asset('frontEnd/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
     <link href="{{asset('frontEnd/css/style.css')}}" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="{{asset('frontEnd/css/jquery.datetimepicker.css')}}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{{ url( backEndCssPath.'/toastr.min.css') }}" rel="stylesheet">
+
 </head>
 
 <body>
-    @include('frontEnd.common.header')
-    <div>
-        @yield('content')
-    </div>
-    @include('frontEnd.common.footer')
 
-
-
-    <script src="{{asset('frontEnd/vendor/jquery/jquery.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/php-email-form/validate.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/venobox/venobox.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/counterup/counterup.min.js')}}"></script>
-    <script src="{{asset('frontEnd/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('frontEnd/js/main.js')}}"></script>
-    <script src="{{asset('frontEnd/js/jquery.datetimepicker.full.min.js')}}"></script>
-    <script type="text/javascript">
-        jQuery('#datetimepicker').datetimepicker();
-    </script>
 </body>
+@include('frontEnd.common.header')
+<div>
+    @yield('content')
+</div>
+@include('frontEnd.common.footer')
 
+<script src="{{asset('frontEnd/vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/jquery.easing/jquery.easing.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/php-email-form/validate.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/owl.carousel/owl.carousel.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/venobox/venobox.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/waypoints/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/counterup/counterup.min.js')}}"></script>
+<script src="{{asset('frontEnd/vendor/aos/aos.js')}}"></script>
+<script src="{{asset('frontEnd/js/main.js')}}"></script>
+<script src="{{asset('frontEnd/js/jquery.datetimepicker.full.min.js')}}"></script>
+<script type="text/javascript" src="{{ url( backEndJsPath.'/jquery.validate.js') }}"></script>
+<script src="{{asset('frontEnd/js/form-validation.js')}}"></script>
+<script src="{{ url( backEndJsPath.'/toastr.min.js') }}"></script>
+<script type="text/javascript">
+    jQuery('#datetimepicker').datetimepicker();
+</script>
+<script type="text/javascript">
+    <?php if(Session::has('success')){ ?>
+        toastr.success("{{ Session::get('success') }}");
+    <?php } ?>
+
+    <?php if(Session::has('error')){ ?>
+        toastr.error("{{ Session::get('error') }}");
+    <?php } ?>
+</script>
 </html>

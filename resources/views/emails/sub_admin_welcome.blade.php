@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Scamper Skills</title>
+        <title>Syncboat</title>
         <style type="text/css">
             body{font-family: 'open-sans', sans-serif;color: #77798c;font-size: 14px;}
         </style>

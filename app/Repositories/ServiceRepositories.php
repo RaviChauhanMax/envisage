@@ -29,7 +29,7 @@ class ServiceRepositories{
 	}
 
 	public function getAll(){
-		$services = Services::select('service_name','icon','link')->get();
+		$services = Services::select('id','service_name','icon','link')->get();
 		return $services;
 	}
 
